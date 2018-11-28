@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d235274a-5d43-4eff-aef0-ba6f1f6c3a4c" name="aws" url="http://54.144.93.254">
+        <fileTransfer host="54.144.93.254" port="22" privateKey="C:\Users\gclop\Desktop\Documentation\AWS\KeyPairsPemFiles\WordpressKeyPair.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
