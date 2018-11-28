@@ -1,5 +1,5 @@
 @yield('head')
-        <!doctype html>
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,9 @@
     <li><a href="/">home</a></li>
     <li><a href="/about">about us</a></li>
     <li><a href="/contact">contact us to learn more</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/projects/create">Create a Project</a></li>
+    <li><a href="/projects/edit">Edit</a></li>
 </ul>
 @yield('foot')
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

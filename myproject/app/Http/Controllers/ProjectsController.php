@@ -11,7 +11,7 @@ class ProjectsController extends Controller
 //        return $projects;
 //        return view('projects.index');
 //        return view('projects.index',compact('projects'));
-          return view('projects.index', ['projects' => $projects]);
+        return view('projects.index', ['projects' => $projects]);
     }
 
     public function create(){
@@ -23,5 +23,18 @@ class ProjectsController extends Controller
         $project->description = request('description');
         $project->save();
         return redirect('/projects');
+    }
+    public function edit($id){
+        $project = Project::find($id);
+        return view('/projects.edit', compact('project'));
+    }
+    public function update($id){
+        $project = Project::find($id);
+        $project -> title = request('title');
+        $project -> description = request('description');
+        $project -> save();
+        return redirect('/projects');
+//                dd(request()->all());
+        //        dd('Hello');
     }
 }
